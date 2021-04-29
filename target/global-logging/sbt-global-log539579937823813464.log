@@ -1,7 +1,0 @@
-[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile -deprecation, Some(7ef71c0f-3bc4-4fc9-8104-95b0b8e036c0), Some(CommandSource(console0)))[0m
-[0m[[0m[31merror[0m] [0m[0mExpected whitespace character[0m
-[0m[[0m[31merror[0m] [0m[0mExpected '/'[0m
-[0m[[0m[31merror[0m] [0m[0mcompile -deprecation[0m
-[0m[[0m[31merror[0m] [0m[0m        ^[0m
-[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
-[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
