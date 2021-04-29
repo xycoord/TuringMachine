@@ -4,6 +4,8 @@ trait TapeMachine {
   def E() : TapeMachine
   def L() : TapeMachine
   def R() : TapeMachine
+  def getComputedNumberString() : String
+  def getComputedNumber() : Double
 }
 
 class Tape extends TapeMachine{

@@ -2967,3 +2967,201 @@ Mar 29, 2021 4:58:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellat
 WARNING: Unmatched cancel notification for request id 4228
 Mar 29, 2021 4:58:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 4230
+Unexpected exception when forwarding server stdin ---> client stdout
+java.io.IOException: com.sun.jna.LastErrorException: [104] Connection reset by peer
+	at bloop.sockets.UnixDomainSocket$UnixDomainSocketInputStream.doRead(UnixDomainSocket.java:171)
+	at bloop.sockets.UnixDomainSocket$UnixDomainSocketInputStream.read(UnixDomainSocket.java:156)
+	at java.base/java.nio.channels.Channels$ReadableByteChannelImpl.read(Channels.java:388)
+	at bloop.launcher.bsp.BspBridge.copyContents(BspBridge.scala:289)
+	at bloop.launcher.bsp.BspBridge.forwardStreamContents(BspBridge.scala:275)
+	at bloop.launcher.bsp.BspBridge.$anonfun$wireBspConnectionStreams$2(BspBridge.scala:228)
+	at bloop.bloopgun.core.Shell$$anon$2.run(Shell.scala:155)
+Caused by: com.sun.jna.LastErrorException: [104] Connection reset by peer
+	at bloop.sockets.UnixDomainSocketLibrary.read(Native Method)
+	at bloop.sockets.UnixDomainSocket$UnixDomainSocketInputStream.doRead(UnixDomainSocket.java:169)
+	... 6 more
+Unexpected exception when forwarding server stdin ---> client stdout
+java.io.IOException: com.sun.jna.LastErrorException: [104] Connection reset by peer
+	at bloop.sockets.UnixDomainSocket$UnixDomainSocketInputStream.doRead(UnixDomainSocket.java:171)
+	at bloop.sockets.UnixDomainSocket$UnixDomainSocketInputStream.read(UnixDomainSocket.java:156)
+	at java.base/java.nio.channels.Channels$ReadableByteChannelImpl.read(Channels.java:388)
+	at bloop.launcher.bsp.BspBridge.copyContents(BspBridge.scala:289)
+	at bloop.launcher.bsp.BspBridge.forwardStreamContents(BspBridge.scala:275)
+	at bloop.launcher.bsp.BspBridge.$anonfun$wireBspConnectionStreams$2(BspBridge.scala:228)
+	at bloop.bloopgun.core.Shell$$anon$2.run(Shell.scala:155)
+Caused by: com.sun.jna.LastErrorException: [104] Connection reset by peer
+	at bloop.sockets.UnixDomainSocketLibrary.read(Native Method)
+	at bloop.sockets.UnixDomainSocket$UnixDomainSocketInputStream.doRead(UnixDomainSocket.java:169)
+	... 6 more
+[0m2021.03.30 11:57:21 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.03.30 11:57:21 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.04.29 13:34:49 INFO  Started: Metals version 0.9.10 in workspace '/home/logan/ScalaProjects/turing-machine' for client coc.nvim 0.0.79.[0m
+[0m2021.04.29 13:34:50 INFO  time: initialize in 1.49s[0m
+[0m2021.04.29 13:34:54 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher12190886484579996601/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.04.29 13:34:54 INFO  skipping build import with status 'Installed'[0m
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m2021.04.29 13:34:57 INFO  no build target: using presentation compiler with only scala-library[0m
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.6-21-464e4ec4...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/logan/ScalaProjects/turing-machine/.bloop'...
+[0m[32m[D][0m Loading project from '/home/logan/ScalaProjects/turing-machine/.bloop/root.json'
+[0m[32m[D][0m Loading project from '/home/logan/ScalaProjects/turing-machine/.bloop/root-test.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.13.3.
+[0m[32m[D][0m   => /home/logan/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar
+[0m[32m[D][0m   => /home/logan/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.15.0/jline-3.15.0.jar
+[0m[32m[D][0m   => /home/logan/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.3/scala-compiler-2.13.3.jar
+[0m[32m[D][0m   => /home/logan/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar
+[0m[32m[D][0m   => /home/logan/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'root', 'root-test'
+[0m[32m[D][0m Loading previous analysis for 'root-test' from '/home/logan/ScalaProjects/turing-machine/target/streams/test/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip'.
+[0m[32m[D][0m Loading previous analysis for 'root' from '/home/logan/ScalaProjects/turing-machine/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher12190886484579996601/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher12190886484579996601/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.29 13:34:58 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/logan/.cache/metals/bsp.trace.json[0m
+[0m2021.04.29 13:34:58 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher1322189365360783463/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher1322189365360783463/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher1322189365360783463/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.29 13:34:59 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/logan/.cache/metals/bsp.trace.json[0m
+[0m2021.04.29 13:34:59 INFO  time: connected to build server in 4.79s[0m
+[0m2021.04.29 13:34:59 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.04.29 13:34:59 INFO  time: imported build in 0.24s[0m
+[0m2021.04.29 13:35:00 INFO  compiling root (6 scala sources)[0m
+[0m2021.04.29 13:35:03 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.04.29 13:35:03 INFO  time: indexed workspace in 4.22s[0m
+[0m2021.04.29 13:35:03 INFO  Deduplicating compilation of root from bsp client 'Metals 0.9.10' (since 4.701s)[0m
+[0m2021.04.29 13:35:03 INFO  compiling root (6 scala sources)[0m
+[0m2021.04.29 13:35:09 WARN  286 deprecations (since 2.13.3); re-run with -deprecation for details[0m
+[0m2021.04.29 13:35:09 WARN  286 deprecations (since 2.13.3); re-run with -deprecation for details[0m
+[0m2021.04.29 13:35:09 INFO  compiling root-test (1 scala source)[0m
+[0m2021.04.29 13:35:09 INFO  time: compiled root in 6.17s[0m
+[0m2021.04.29 13:35:11 WARN  35 deprecations (since 2.13.3); re-run with -deprecation for details[0m
+[0m2021.04.29 13:35:11 INFO  time: compiled root-test in 1.26s[0m
+Apr 29, 2021 1:51:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 21
+Apr 29, 2021 1:51:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 34
+Apr 29, 2021 1:54:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 76
+[0m2021.04.29 13:54:20 INFO  compiling root (1 scala source)[0m
+[0m2021.04.29 13:54:20 INFO  time: compiled root in 0.13s[0m
+[0m2021.04.29 13:54:28 INFO  compiling root (1 scala source)[0m
+[0m2021.04.29 13:54:28 INFO  time: compiled root in 80ms[0m
+Apr 29, 2021 1:55:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 107
+[0m2021.04.29 13:55:36 INFO  compiling root (1 scala source)[0m
+[0m2021.04.29 13:55:36 INFO  time: compiled root in 66ms[0m
+[0m2021.04.29 13:55:43 INFO  compiling root (1 scala source)[0m
+[0m2021.04.29 13:55:43 INFO  time: compiled root in 66ms[0m
+[0m2021.04.29 13:57:20 INFO  compiling root (1 scala source)[0m
+[0m2021.04.29 13:57:20 INFO  time: compiled root in 65ms[0m
+[0m2021.04.29 13:58:20 INFO  compiling root (1 scala source)[0m
+[0m2021.04.29 13:58:20 INFO  time: compiled root in 58ms[0m
+[0m2021.04.29 14:00:21 INFO  compiling root (1 scala source)[0m
+[0m2021.04.29 14:00:21 INFO  time: compiled root in 60ms[0m
+[0m2021.04.29 14:01:04 INFO  compiling root (1 scala source)[0m
+[0m2021.04.29 14:01:04 INFO  time: compiled root in 51ms[0m
+[0m2021.04.29 14:01:45 INFO  compiling root (1 scala source)[0m
+[0m2021.04.29 14:01:45 INFO  time: compiled root in 59ms[0m
+[0m2021.04.29 14:01:55 INFO  compiling root (1 scala source)[0m
+[0m2021.04.29 14:01:55 INFO  time: compiled root in 50ms[0m
+[0m2021.04.29 14:02:05 INFO  compiling root (1 scala source)[0m
+[0m2021.04.29 14:02:05 INFO  time: compiled root in 0.12s[0m
+[0m2021.04.29 14:02:15 INFO  compiling root (1 scala source)[0m
+[0m2021.04.29 14:02:15 INFO  time: compiled root in 0.1s[0m
+[0m2021.04.29 14:02:53 INFO  compiling root (1 scala source)[0m
+[0m2021.04.29 14:02:53 INFO  time: compiled root in 0.65s[0m
+[0m2021.04.29 14:03:00 INFO  compiling root (1 scala source)[0m
+[0m2021.04.29 14:03:00 INFO  time: compiled root in 0.63s[0m
+[0m2021.04.29 14:03:02 INFO  compiling root (1 scala source)[0m
+[0m2021.04.29 14:03:02 INFO  time: compiled root in 0.6s[0m
+Apr 29, 2021 2:04:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 194
+Apr 29, 2021 2:04:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 201
+[0m2021.04.29 14:04:52 INFO  compiling root (1 scala source)[0m
+[0m2021.04.29 14:04:52 INFO  time: compiled root in 55ms[0m
+[0m2021.04.29 14:05:01 INFO  compiling root (1 scala source)[0m
+[0m2021.04.29 14:05:01 INFO  time: compiled root in 96ms[0m
+[0m2021.04.29 14:05:35 INFO  compiling root (1 scala source)[0m
+[0m2021.04.29 14:05:35 INFO  time: compiled root in 91ms[0m
+[0m2021.04.29 14:06:22 INFO  compiling root (1 scala source)[0m
+[0m2021.04.29 14:06:22 INFO  time: compiled root in 0.57s[0m
+[0m2021.04.29 14:06:22 INFO  compiling root (1 scala source)[0m
+[0m2021.04.29 14:06:22 INFO  time: compiled root in 52ms[0m
+[0m2021.04.29 14:06:35 INFO  compiling root (1 scala source)[0m
+[0m2021.04.29 14:06:35 INFO  time: compiled root in 0.73s[0m
+[0m2021.04.29 14:06:35 INFO  compiling root (1 scala source)[0m
+[0m2021.04.29 14:06:35 INFO  time: compiled root in 61ms[0m
+[0m2021.04.29 14:06:48 INFO  compiling root (1 scala source)[0m
+[0m2021.04.29 14:06:48 INFO  time: compiled root in 0.62s[0m
+[0m2021.04.29 14:06:48 INFO  compiling root (1 scala source)[0m
+[0m2021.04.29 14:06:48 INFO  time: compiled root in 58ms[0m
+Apr 29, 2021 2:07:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 249
+Apr 29, 2021 2:07:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 259
+[0m2021.04.29 14:07:46 INFO  compiling root (2 scala sources)[0m
+[0m2021.04.29 14:07:46 INFO  time: compiled root in 0.83s[0m
+[0m2021.04.29 14:07:46 INFO  compiling root (3 scala sources)[0m
+[0m2021.04.29 14:07:47 WARN  2 deprecations (since 2.13.3); re-run with -deprecation for details[0m
+[0m2021.04.29 14:07:47 INFO  time: compiled root in 0.44s[0m
+Apr 29, 2021 2:09:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 276
+[0m2021.04.29 14:10:11 INFO  compiling root (1 scala source)[0m
+[0m2021.04.29 14:10:11 INFO  time: compiled root in 0.68s[0m
+[0m2021.04.29 14:10:45 INFO  compiling root (1 scala source)[0m
+[0m2021.04.29 14:10:45 INFO  time: compiled root in 0.61s[0m
+[0m2021.04.29 17:22:49 INFO  Started: Metals version 0.9.10 in workspace '/home/logan/ScalaProjects/turing-machine' for client coc.nvim 0.0.79.[0m
+[0m2021.04.29 17:22:51 INFO  time: initialize in 1.37s[0m
+[0m2021.04.29 17:22:51 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher15133400184787270446/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.04.29 17:22:51 INFO  skipping build import with status 'Installed'[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher15133400184787270446/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher15133400184787270446/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.29 17:22:51 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/logan/.cache/metals/bsp.trace.json[0m
+[0m2021.04.29 17:22:51 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher2202547195962597940/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher2202547195962597940/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher2202547195962597940/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.29 17:22:51 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/logan/.cache/metals/bsp.trace.json[0m
+[0m2021.04.29 17:22:51 INFO  time: connected to build server in 0.43s[0m
+[0m2021.04.29 17:22:51 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.04.29 17:22:54 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.04.29 17:22:54 INFO  time: indexed workspace in 2.84s[0m
+[0m2021.04.29 17:23:01 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.04.29 17:23:01 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+[0m2021.04.29 17:24:32 INFO  Started: Metals version 0.9.10 in workspace '/home/logan/ScalaProjects/turing-machine' for client coc.nvim 0.0.79.[0m
